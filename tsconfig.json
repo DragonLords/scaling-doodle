@@ -1,0 +1,44 @@
+{
+  "compilerOptions": {
+      "noImplicitAny": false,
+      "noEmitOnError": true,
+      "removeComments": false,
+      "sourceMap": true,
+      "target": "es6",
+      "module": "commonjs",
+      "rootDir": "./src/",
+      "outDir": "./dist/",
+      "strict": true,
+      "moduleResolution": "node",
+      "importHelpers": false,
+      "experimentalDecorators": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "allowSyntheticDefaultImports": true,
+      "resolveJsonModule": true,
+      "forceConsistentCasingInFileNames": true,
+      "typeRoots": [
+          "node_modules/@types",
+          "./src/global.d.ts"
+      ],
+      "baseUrl": ".",
+      "paths": {
+          "tslib" : ["node_modules/tslib/tslib.d.ts"]
+          // "path":["node_modules/"]
+      },
+  },
+  // "files": [
+  //     "src/Main.ts"
+  // ],
+  "include": [
+      "./**/*.ts"
+  ],
+  "exclude": [
+      "node_modules",
+      "dist",
+      "src/**/*.spec.ts"
+  ],
+  "types":[
+      "node"
+  ]
+}
